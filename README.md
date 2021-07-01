@@ -1,7 +1,3 @@
 # Curriculum Vitae
 
----
-
 > Michael Poehlmann
-
----
