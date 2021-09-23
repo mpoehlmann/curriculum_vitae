@@ -1,165 +1,23 @@
-% !TEX TS-program = XeLaTeX
 \documentclass[a4paper,10pt]{article}
 
-\input{preamble}
+\usepackage{import}
+\usepackage{preamble}
 
-%--------------------------------------------------------
-%--------------------BEGIN DOCUMENT----------------------
-%--------------------------------------------------------
+
 \begin{document}
-\pagestyle{empty} % non-numbered pages
-\font\fb=''[cmr10]'' %for use with \LaTeX command
 
-\nobibliography{pubs.bib}
-\bibliographystyle{elsarticle-num} %unsrt
+% Title
+\thispagestyle{first}
+\par{\centering{\Huge Michael Poehlmann}\bigskip\par}
 
-%--------------------TITLE-------------
-\par{\centering
-		{\Huge Michael Poehlmann   %\textsc{Poehlmann}
-	}\bigskip\par}
-
-
-
-%---------------------------------------------------------------
-%--------------------SECTIONS-----------------------------------
-%---------------------------------------------------------------
-%%% Personal Information
-\section{Personal Information}
-\begin{tabular}{rl}
-\textsc{Full Name:}             & David-Michael T. Poehlmann \\ %(\textit{formerly David Michael DeGuire}) \\
-%\textsc{Previous Names:}   & David Michael DeGuire \\
-\textsc{email:}                 & \href{mailto:poehlmann@ucdavis.edu}{poehlmann@ucdavis.edu} \\
-\textsc{Website:}               & \href{https://mpoehlmann.github.io}{mpoehlmann.github.io}\\
-\textsc{Phone:}                 & (608) 630-0431\\
-\textsc{Address:}               & 1850 Hanover Dr. \#112, Davis, CA 95616 \\
-% \multicolumn{2}{c}{} \\
-\end{tabular}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
-% \begin{tabular}{r|l}    %R{1.5cm} | L{14cm}} %r|l}
-\begin{tabular}{R{1.5cm}|L{14cm}}
-\emph{Present}  &  PhD candidate in \textsc{Physics}, \UCD, Davis, CA \\
-\textsc{Sept 2018} & Degree expected in 2023 \\
-& \textsc{Gpa}: 3.55/4 \\
-
-\arrayrulecolor{white}\hline \hline \hline \arrayrulecolor{black}
-
-\textsc{May 2018} & Honors BSc in \textsc{Physics}, \textit{cum laude}, \UMN, Minneapolis, MN \\
-\textsc{Sept 2014} 	& \textsc{Gpa}: 3.60/4 \\ 
-	% & Honors Thesis: ``Gadolinium-loaded Plastic Scintillator for Neutron Detection'' \\
-	% & \hspace{5mm} \small Advisor: Prof. Priscilla Cushman \\
-
-\end{tabular}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Research experiences
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Research Experience}
-\begin{tabular}{R{1.5cm}|L{14cm}}
-\emph{Present}  & \textsc{DarkSide} Collaboration, \UCD \\
-\textsc{Jul 2018} & \textit{PI: Prof. Emilija Pantic} \\
-& {\footnotesize Worked on experimental design, data acquisition system development, hardware development, and detector commissioning for ARIS-ER. Ran Monte Carlo simulations in \textsc{Geant4} for the design of \textsc{DarkSide-20k}, with a focus on backgrounds and optical modeling. Contributed to the analysis of data collected by DarkSide-50.} \\
-
-\arrayrulecolor{white}\hline \hline \hline \arrayrulecolor{black}
-
-%\textsc{Jun 2018} \textsc{Jan 2016} & \textsc{Super Cryogenic Dark Matter Search (SuperCDMS)} Collaboration, \textbf{University of Minnesota} \\
-\textsc{Jun 2018} & \textsc{Cryogenic Dark Matter Search (CDMS)} Collaboration, \UMN \\
-\textsc{Jan 2016} & \textit{PI: Prof. Priscilla Cushman} \\
-& {\footnotesize Developed components for the active neutron veto of the proposed \textsc{SuperCDMS SNOLAB} detector. Worked on loading gadolinium into plastic scintillator and characterized sample properties.} \\
-
-\arrayrulecolor{white}\hline \hline \hline \arrayrulecolor{black}
-
-\textsc{Jun 2017}  & \textsc{Light Dark Matter eXperiment (LDMX)} Collaboration, \UMN \\
-\textsc{Jan 2017} & \textit{PI: Prof. Jeremiah Mans} \\
-& {\footnotesize Measured the event discrimination efficiency of thin plastic scintillator sheets for the \textsc{LDMX} experiment.} \\
-
-\arrayrulecolor{white}\hline \hline \hline \arrayrulecolor{black}
-
-\textsc{Jun 2016} & \textsc{Greven} Research Group, \UMN \\
-\textsc{Sept 2015} & \textit{PI: Prof. Martin Greven} \\
-& {\footnotesize Grew and analyzed Hg1201 crystals to collect data on possible mechanisms behind high-temperature superconductivity. Tasks included crystal growth in conventional box furnaces, sample annealing, and measurements of susceptibility using a MPMS instrument.} \\
- 
-\end{tabular}
-
-
-\section{Publications}
-\begin{enumerate}
-\item \bibentry{cdmsGdPS2018} \\
-    {\footnotesize First-authored paper for which I fabricated and characterized scintillator samples.}
-\end{enumerate}
-
-
-\section{Presentations}
-\begin{enumerate}
-\item \bibentry{APSFarWestFall2020} \\
-    {\footnotesize Talk given virtually at the 2020 APS Far West Section meeting.}
-\item \bibentry{FNALNewPerspectives2020} \\
-    {\footnotesize Talk given virtually at the Fermilab New Perspectives 2020 conference.}
-\item \bibentry{ARISERpresentationAPS2019} \\
-    {\footnotesize Poster presented at the 2019 APS Far West Section meeting at Stanford University.}
-\end{enumerate}
-
-
-\section{Honors and Fellowships Received}
-\begin{tabular}{rl}
-\textsc{2020} & Honorable Mention, Graduate Research Fellowship Program, \textbf{National Science Foundation} \\
-\textsc{2019} & F. Paul Brady Graduate Fellowship, \UCD \\ %winter quarter of 1st year
-\textsc{2014-2018} & Gold Scholar Award, \UMN \\
-\textsc{2014-2018} & Dean's List, College of Science and Engineering, \UMN \\
-\textsc{2014} & National Merit Scholar, \textbf{National Merit Scholarship Corporation} \\
-% \multicolumn{2}{c}{} \\
-\end{tabular}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Outreach efforts
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Outreach Efforts}
-\begin{tabular}{R{1.5cm}|L{14cm}}
-\emph{Present} & \textsc{Nuclear Forensics}, \UCD \\
-\textsc{Jan 2020} & {\footnotesize Helped to develop an outreach program to provide undergraduate students with an introduction to experimental high energy physics. The program, entitled "Nuclear Forensics: Dusting for the Fingerprints of Radioactivity," seeks to provide untapped groups with a hands-on experience to identify trace radioisotopes through Neutron Activation Analysis.} \\
-
-\end{tabular}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Relevant Skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Relevant Skills}
-\begin{tabular}{rl}
-Basic Knowledge: & 
-	Machine shop training
-	%\textsc{Linux}, 
-	%ubuntu, 
-	\\
-	
-Intermediate Knowledge: &   
-	Machine learning,
-	Bash,
-	{\fb \LaTeX}\setmainfont[Path=fonts/, SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} 
-	\\
-
-Advanced Knowledge: & 
-	C/C\texttt{++},
-	Python,
-	\textsc{Geant4} (including optical Monte Carlos),
-	ROOT,
-	MS Office
-	\\
-% \multicolumn{2}{c}{} \\
-\end{tabular}
-
-
-\section{Teaching Experience}
-\begin{tabular}{R{1.5cm} | L{14cm}}
-\textsc{Fall 2018} & Physics 7A, \UCD \\
-& {\footnotesize Taught lab and discussion sections for an introductory physics course for non-physics majors.} \\
-\end{tabular}
-
-
+% Sections
+\import{sections}{personal_info.tex}
+\import{sections}{education.tex}
+\import{sections}{research.tex}
+\import{sections}{pubs_pres.tex}
+\import{sections}{honors_fellowships.tex}
+\import{sections}{outreach.tex}
+\import{sections}{skills.tex}
+\import{sections}{teaching.tex}
 
 \end{document}
